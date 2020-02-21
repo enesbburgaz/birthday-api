@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace birthday.Models
+{
+    public class Person
+    {
+        [Key]
+        public int id { get; set; }
+        [Column(TypeName = "nvarchar(100)")]
+        public string fullName { get; set; }
+        [Column(TypeName = "nvarchar(100)")]
+        public string mobile { get; set; }
+        [Column(TypeName = "nvarchar(100)")]
+        public string birthday { get; set; }
+        public int age { get; set; }
+        [Column(TypeName = "nvarchar(100)")]
+        public string email { get; set; }
+    }
+}
